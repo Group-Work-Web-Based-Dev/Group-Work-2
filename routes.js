@@ -45,11 +45,11 @@ let user = [
   }
 ]
 
-router.get('/lesson', (request, response) => {
+router.get('/lessons', (request, response) => {
   response.json(lessons);
 });
 
-router.get('/user', (request, response) => {
+router.get('/users', (request, response) => {
   response.json(user);
 });
 

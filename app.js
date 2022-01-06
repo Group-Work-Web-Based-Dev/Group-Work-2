@@ -7,7 +7,7 @@ var apiRouter = require("./routes");
 var staticPath = path.resolve(__dirname, "public");
 app.use(express.static(staticPath));
 
-app.use("/James", apiRouter);
+app.use("/", apiRouter);
 
 const PORT = 3000
 let hostname = "0.0.0.0";

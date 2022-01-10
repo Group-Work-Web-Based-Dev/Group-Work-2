@@ -10,7 +10,7 @@ let lessons = [
     "id": 1,
     "Subject": "Math",
     "Location": "London",
-    "price": 100,
+    "price": 150,
   },
   {
     "id": 2,
@@ -22,7 +22,7 @@ let lessons = [
     "id": 3,
     "Subject": "Science",
     "Location": "Oxford",
-    "price": 100,
+    "price": 90,
   },
   {
     "id": 4,
@@ -34,7 +34,7 @@ let lessons = [
     "id": 5,
     "Subject": "Music",
     "Location": "Brisol",
-    "price": 90,
+    "price": 70,
   }
 ]
 

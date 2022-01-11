@@ -1,8 +1,8 @@
-var express = require('express')
-var router = express.Router()
+var express = require('express') //require express module
+var router = express.Router() //define router
 
 // middleware that is specific to this router
-router.use(function timeLog(req, res, next) {
+router.use(function(req, res, next) {
   next()
 })
 let lessons = [

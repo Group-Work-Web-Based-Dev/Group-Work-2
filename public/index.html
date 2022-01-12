@@ -9,6 +9,7 @@
 <body>
     <h1>After School Lessons</h1>
     <div id="app">
+        <!-- The <div> ID will be used to link to the Vue.js code -->
         <div style="display: flex; flex-wrap: wrap; gap: 10px">
             <div v-for="lessons in lessons" style="border: 5px solid blue; width: 150px; background-color: lightblue">
                 <figure>
@@ -22,17 +23,22 @@
 </body>
 
 <script>
-    let app = new Vue({
-        el: '#app',
+    let app = new Vue({// the root Vue instance//
+        el: '#app', // this links to the <div> with the ID #app//
         data: {
             lessons: [],
         },
         created: function () {
+            //display outputs a message to the web console//
             console.log("requesting data from server...");
+            // this function will be run automatically 
+            // when creating the Vue instance
             fetch("http://localhost:3000/lesson").then(
                 function (res) {
                     res.json().then(
                         function (json) {
+                            //  save  the  returned  JSON  object  to  'lessons' 
+                            //  note  that  we  used  'app.lessons'  instead  of  'this.lesson'
                             app.lessons = json;
                         }
                     )

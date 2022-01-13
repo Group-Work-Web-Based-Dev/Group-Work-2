@@ -14,7 +14,7 @@ let lessons = [
   },
   {
     "id": 2,
-    "Subject": "Engilsh",
+    "Subject": "English",
     "Location": "London",
     "price": 100,
   },
@@ -26,7 +26,7 @@ let lessons = [
   },
   {
     "id": 4,
-    "Subject": "Histoy",
+    "Subject": "History",
     "Location": "York",
     "price": 80,
   },
